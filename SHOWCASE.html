@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Report Builder Skill - 10种风格展示</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'PingFang SC','Microsoft YaHei',sans-serif;background:#0f0f23;color:#fff;line-height:1.7}
+.hero{text-align:center;padding:80px 20px;background:linear-gradient(135deg,#1e1e3f,#2d1b69);position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background:url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="0.5"/></svg>') repeat;background-size:60px}
+.hero h1{font-size:3rem;font-weight:800;background:linear-gradient(135deg,#60a5fa,#a78bfa);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:16px;position:relative}
+.hero p{font-size:1.2rem;opacity:0.8;max-width:600px;margin:0 auto;position:relative}
+.hero .badge{display:inline-block;background:rgba(139,92,246,0.3);border:1px solid rgba(139,92,246,0.5);padding:6px 20px;border-radius:20px;font-size:0.85rem;margin-bottom:20px;position:relative}
+.container{max-width:1200px;margin:0 auto;padding:60px 20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:24px}
+.card{background:#1a1a2e;border-radius:20px;overflow:hidden;transition:transform 0.3s,box-shadow 0.3s;text-decoration:none;color:inherit;display:block;border:1px solid rgba(255,255,255,0.05)}
+.card:hover{transform:translateY(-6px);box-shadow:0 20px 60px rgba(99,102,241,0.2);border-color:rgba(99,102,241,0.3)}
+.preview{min-height:160px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:24px;position:relative}
+.preview .style-name{font-size:0.7rem;letter-spacing:3px;text-transform:uppercase;opacity:0.5;margin-bottom:8px}
+.preview .icon{font-size:2.5rem;margin-bottom:8px}
+.preview .tag{position:absolute;top:12px;right:12px;font-size:0.65rem;background:rgba(255,255,255,0.1);padding:3px 10px;border-radius:8px}
+.info{padding:20px 24px}
+.info h3{font-size:1rem;font-weight:600;margin-bottom:6px}
+.info p{font-size:0.82rem;opacity:0.6;line-height:1.5}
+.cta{text-align:center;padding:60px 20px;background:linear-gradient(135deg,#1e1e3f,#2d1b69);margin-top:40px}
+.cta h2{font-size:1.8rem;margin-bottom:12px}
+.cta p{opacity:0.7;margin-bottom:24px}
+.cta-btn{display:inline-block;background:linear-gradient(135deg,#6366f1,#8b5cf6);color:#fff;padding:14px 40px;border-radius:12px;font-weight:600;text-decoration:none;transition:transform 0.2s}
+.cta-btn:hover{transform:scale(1.05)}
+.footer{text-align:center;padding:40px 20px;opacity:0.4;font-size:0.8rem}
+</style>
+</head>
+<body>
+<div class="hero">
+  <div class="badge">🤖 OpenClaw Skill</div>
+  <h1>Report Builder</h1>
+  <p>AI 可视化报告生成器 &nbsp;|&nbsp; 一句话输入 · 10种风格输出 · 直接发文件</p>
+</div>
+
+<div class="container">
+  <div class="grid">
+
+    <a href="#" class="card">
+      <div class="preview" style="background:linear-gradient(135deg,#1e3a8a,#1e40af)">
+        <div class="style-name">Style 01</div>
+        <div class="icon">📊</div>
+        <div class="tag">Dashboard</div>
+      </div>
+      <div class="info">
+        <h3>Executive Dashboard</h3>
+        <p>KPI 卡片 + 网格布局，数据清晰，适合高管汇报</p>
+      </div>
+    </a>
+
+    <a href="#" class="card">
+      <div class="preview" style="background:linear-gradient(135deg,#0f766e,#0d9488)">
+        <div class="style-name">Style 02</div>
+        <div class="icon">🗺️</div>
+        <div class="tag">Infographic ⭐</div>
+      </div>
+      <div class="info">
+        <h3>信息图版</h3>
+        <p>流程图 + 进度条 + 色彩编码，直观可视化</p>
+      </div>
+    </a>
+
+    <a href="#" class="card">
+      <div class="preview" style="background:linear-gradient(135deg,#92400e,#b45309)">
+        <div class="style-name">Style 03</div>
+        <div class="icon">📰</div>
+        <div class="tag">Magazine</div>
+      </div>
+      <div class="info">
+        <h3>杂志社论风</h3>
+        <p>衬线字体，大号引文，学术感强</p>
+      </div>
+    </a>
+
+    <a href="#" class="card">
+      <div class="preview" style="background:linear-gradient(135deg,#0d1929,#1a2a40)">
+        <div class="style-name">Style 04</div>
+        <div class="icon">💻</div>
+        <div class="tag">Dark Tech</div>
+      </div>
+      <div class="info">
+        <h3>暗黑科技风</h3>
+        <p>终端风格，代码展示，程序员友好</p>
+      </div>
+    </a>
+
+    <a href="#" class="card">
+      <div class="preview" style="background:linear-gradient(135deg,#fff,#f8fafc)">
+        <div class="style-name" style="color:#999">Style 05</div>
+        <div class="icon">🤍</div>
+        <div class="tag" style="color:#666;background:rgba(0,0,0,0.08)">Minimal</div>
+      </div>
+      <div class="info" style="background:#fff;color:#1e293b">
+        <h3 style="color:#1e293b">极简白</h3>
+        <p style="color:#64748b">大量留白，Helvetica字体，性冷淡北欧风</p>
+      </div>
+    </a>
+
+    <a href="#" class="card">
+      <div class="preview" style="background:linear-gradient(135deg,#f0ece0,#e8e0d0);color:#3d3d3d">
+        <div class="style-name" style="color:#888">Style 06</div>
+        <div class="icon">🗞</div>
+        <div class="tag" style="color:#666;background:rgba(0,0,0,0.08)">Retro</div>
+      </div>
+      <div class="info" style="background:#faf8f5">
+        <h3 style="color:#3d3d3d">复古报纸风</h3>
+        <p style="color:#666">双线边框，老式排版，报纸质感</p>
+      </div>
+    </a>
+
+    <a href="#" class="card">
+      <div class="preview" style="background:linear-gradient(135deg,#ffecd2,#fcb69f,#ff9a9e)">
+        <div class="style-name">Style 07</div>
+        <div class="icon">🌈</div>
+        <div class="tag">Gradient</div>
+      </div>
+      <div class="info">
+        <h3>渐变现代风</h3>
+        <p>柔和渐变，圆角卡片，现代感强</p>
+      </div>
+    </a>
+
+    <a href="#" class="card">
+      <div class="preview" style="background:linear-gradient(135deg,#0f172a,#1e293b)">
+        <div class="style-name">Style 08</div>
+        <div class="icon">📈</div>
+        <div class="tag">Data Forward</div>
+      </div>
+      <div class="info">
+        <h3>数据优先版</h3>
+        <p>表格为主，代码注释风格，严肃专业</p>
+      </div>
+    </a>
+
+    <a href="#" class="card">
+      <div class="preview" style="background:linear-gradient(135deg,#fef9f0,#fff0eb)">
+        <div class="style-name" style="color:#888">Style 09</div>
+        <div class="icon">🎉</div>
+        <div class="tag" style="color:#d97706;background:rgba(217,119,6,0.1)">Playful</div>
+      </div>
+      <div class="info" style="background:#fffbeb">
+        <h3 style="color:#92400e">活力创意版</h3>
+        <p style="color:#a16207">暖色调，emoji点缀，轻松活泼</p>
+      </div>
+    </a>
+
+    <a href="#" class="card">
+      <div class="preview" style="background:linear-gradient(135deg,#003049,#1a5fa8)">
+        <div class="style-name">Style 10</div>
+        <div class="icon">🔷</div>
+        <div class="tag">Professional</div>
+      </div>
+      <div class="info">
+        <h3>专业蓝版</h3>
+        <p>深蓝色企业风格，信任感强</p>
+      </div>
+    </a>
+
+  </div>
+</div>
+
+<div class="cta">
+  <h2>让报告生成变简单</h2>
+  <p>一句话输入，直接发送文件，收到即可查看</p>
+  <a href="https://github.com/KevPH2026/report-builder-skill" class="cta-btn">View on GitHub →</a>
+</div>
+
+<div class="footer">
+  Report Builder Skill for OpenClaw &nbsp;|&nbsp; MIT License
+</div>
+</body>
+</html>
