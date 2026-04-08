@@ -1,4 +1,4 @@
-# Report Builder Skill
+# Kev 的报告生成器 (Report Builder Skill)
 
 > AI 可视化报告生成器 — 一句话输入，多风格输出，可直接发送文件
 
